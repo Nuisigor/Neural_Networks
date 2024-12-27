@@ -125,6 +125,7 @@ _,m_train = X_train.shape
 nn = NN(m)
 nn.addLayer(784, 10, ReLU)
 nn.addLayer(10, 10, ReLU)
+nn.addLayer(10, 10, ReLU)
 nn.addLayer(10, 10, SoftMax)
 
 nn.fit(X_train, Y_train, 0.10, 500)
